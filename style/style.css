@@ -32,14 +32,17 @@ header {
     margin-left: -300px;
 }
 
-.main_form_container .form
+.main_form_container .form {
+
+}
 
 
-.footer_box {
+footer {
     width: 100%;
     height: 25px;
     border: 2px solid #000000;
     box-shadow: 0 0 50px #000000;
     background-color: #FFFFFF;
     position: fixed;
+    bottom: 0;
 }
