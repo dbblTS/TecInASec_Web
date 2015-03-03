@@ -78,5 +78,6 @@ footer ul li:hover{
     font-weight: bold;
     cursor: default;
     transition: all 0.3s ease-in;
+    text-shadow: 0 0 5px #999999;
 
 }
