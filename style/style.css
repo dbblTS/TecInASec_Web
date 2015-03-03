@@ -32,8 +32,21 @@ header {
 header .Logo{
     height: 75px;
 }
-
+/*in here I might add some code so that it is in focus!*/
 .main_form_container {
+    width: 600px;
+    height: 300px;
+    border: 1px solid #353535;
+    box-shadow: 0 0 50px #000000;
+    background-color: #FFFFFF;
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -300px;
+}
+.main_form_container:hover {
+
     width: 600px;
     height: 300px;
     border: 1px solid #353535;
