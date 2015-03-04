@@ -37,7 +37,6 @@ header .Logo{
     width: 600px;
     height: 300px;
     border: 1px solid #353535;
-    box-shadow: 0 0 50px #000000;
     background-color: #FFFFFF;
     position:fixed;
     top: 50%;
@@ -51,7 +50,6 @@ header .Logo{
     width: 600px;
     height: 300px;
     border: 1px solid #353535;
-    box-shadow: 0 0 1000px #000000;
     background-color: #FFFFFF;
     position:fixed;
     top: 50%;
@@ -69,6 +67,9 @@ h3{
     color: #FFFFFF;
     font-size: 50px;
     cursor: default;
+    margin-top: -30px;
+    text-shadow: 0 2px 5px #000000;
+    background-color: azure;
 }
 footer {
     width: 100%;
@@ -76,16 +77,17 @@ footer {
     position: fixed;
     bottom: 0;
     text-align: center;
-    margin-bottom: 30px;
-    transition: all 0.3s ease-out;;
+    margin-top: -100px;
+    transition: all 0.3s ease-out;
+    background-color: aqua;
 }
 footer:hover {
     width: 100%;
-    height: 25px;
+    height: 75px;
     position: fixed;
     bottom: 0;
     text-align: center;
-    margin-bottom: 70px;
+    margin-top: 0;
     transition: all 0.3s ease-out;
 }
 footer ul li{
