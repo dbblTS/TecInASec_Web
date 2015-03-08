@@ -1,0 +1,201 @@
+/*
+Colors:
+	Gray background: #8D8D8D;
+	TecRed: #B50909;
+*/
+/*preset parameters*/
+
+*{
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+body {
+	background-color: #8D8D8D;
+}
+.background{
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+header {
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    background: #8D8D8D;
+}
+header .Logo{
+    margin: 5px 20px;
+    height: 175px;
+}
+header a {
+    position: relative;
+    display: inline;
+    float: right;
+    font-size: 25px;
+    font-family: fantasy;
+    font-weight: bold;
+    margin-right: 20px;
+}
+.main_form_container {
+    width: 500px;
+    height: 300px;
+    border: groove #000000;
+    background-color: #8D8D8D;
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -250px;
+    transition: all 0.7s ease-out;
+}
+.main_form_container:hover {
+    width: 500px;
+    height: 300px;
+    border: groove #000000;
+    background-color: #B50909;
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -250px;
+    transition: all 0.7s ease-out;
+}
+.main_form_container2 .form_search {
+    text-align: center;
+    width: 300px;
+    height: 30px;
+    position: absolute;
+    float: left;
+    font-weight: bold;
+    font-family: monospace;
+    background-color: transparent;
+    color: #FFFFFF;
+}
+
+
+.main_form_container2 .form_minprice {
+    text-align: center;
+    width: 120px;
+    height: 30px;
+    border-radius: 5px;
+    margin-left: 20px;
+    position: absolute;
+    margin-top: 80px;
+    box-shadow: 2px 2px 4px #060606;
+}
+
+.main_form_container2 .form_maxprice {
+    text-align: center;
+    width: 120px;
+    height: 30px;
+    border-radius: 5px;
+    margin-left: 200px;
+    position: absolute;
+    margin-top: 80px;
+    box-shadow: 2px 2px 4px #060606;
+}
+
+.main_form_container2 .form_advanced {
+    bottom: 0;
+    left: 0;
+    height: 40px;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    position: absolute;
+    display: inline-block;
+    width: 50%;
+    -webkit-border-top-left-radius: 4px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-topleft: 4px;
+    -moz-border-radius-bottomleft: 5px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 5px;
+}
+
+.main_form_container2 .form_submit {
+    bottom: 0;
+    position: absolute;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    height: 40px;
+    display: inline-block;
+    width: 50%;
+    right: 0;
+    -webkit-border-top-right-radius: 4px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-topright: 4px;
+    -moz-border-radius-bottomright: 5px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 5px;
+}
+
+.main_results_container {
+    position: absolute;
+    display: inline-block;
+    margin: 100px 0 auto auto;
+    text-align: center;
+    left: 30%;
+}
+
+.main_results_container .item{
+    border: 1px solid #353535;
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+}
+.main_results_container img {
+    height: 150px;
+    width: 150px;
+    float: left;
+    margin-left: 10px;
+    display: inline-block;
+    box-shadow: 0 0 6px #000000;
+}
+
+footer {
+    color: #FFFFFF;
+    width: 100%;
+    height: 0;
+    position: fixed;
+    padding-top: 20px;
+    bottom: 0;
+    text-align: center;
+    transition: all 0.5s ease-out;
+    background-color: #8D8D8D;
+    border-top: groove #000000;
+}
+footer:hover{
+    width: 100%;
+    height: 150px;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    transition: all 0.5s ease-out;
+    background-color: #B50909;
+}
+footer ul li{
+    display: inline;
+    font-size: 25px;
+    list-style-type: none;
+    padding-right: 20px;
+    color: #353535;
+    font-family: fantasy;
+    font-weight: bold;
+    transition: all 0.3s ease-out;
+    cursor: default;
+}
+footer ul li:hover{
+    display: inline;
+    list-style-type: none;
+    padding-right: 20px;
+    color: #FFFFFF;
+    font-family: fantasy;
+    font-weight: bold;
+    cursor: default;
+    transition: all 0.3s ease-in;
+}
