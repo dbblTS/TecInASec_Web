@@ -15,13 +15,3 @@
 	mysqli_select_db($MySQLConnect, $db_name) or die("Error: " . mysqli_error($MySQLConnect));
 
 ?>
-
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Hey</title>
-</head>
-<body>
-You are in search
-</body>
-</html>
