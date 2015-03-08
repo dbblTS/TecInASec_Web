@@ -79,6 +79,16 @@ header .Logo{
     margin-left: 50%;
 }
 
+.main_form_container2 {
+    width: 600px;
+    height: 300px;
+    border: 1px solid #353535;
+    background-color: #FFFFFF;
+    position:fixed;
+    top: 50%;
+    left: 50%;
+}
+
 .main_results_container {
     position: absolute;
     display: inline-block;

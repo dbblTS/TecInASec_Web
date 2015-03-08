@@ -6,7 +6,7 @@
 </head>
 <body>
 	<?php include 'header.php'; ?>
-	<div class="main_form_container">
+	<div class="main_form_container2">
 		<form action="search.php">
             <label>Search</label>
 			<input type="text" name="searchString" class="form_search">
