@@ -24,14 +24,6 @@
                 <button type="submit" class="form_submit">></button>
             </form>
         </div>
-        <footer>
-            <ul>
-                <li>Sean</li>
-                <li>Charlie</li>
-                <li>Laurynas</li>
-                <li>Valentinas</li>
-                <li>Dale</li>
-            </ul>
-        </footer>
+        <?php include 'footer.php'; ?>
     </body>
 </html>
