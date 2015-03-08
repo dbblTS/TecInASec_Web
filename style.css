@@ -191,13 +191,14 @@ header .Logo{
 }
 
 footer {
+    color: #FFFFFF;
     width: 100%;
-    height: 0;
+    height: 20px;
     position: fixed;
     bottom: 0;
     text-align: center;
     transition: all 0.7s ease-out;
-    padding-top: 20px;
+    background-color: #B50909;
 }
 footer:hover{
     width: 100%;
