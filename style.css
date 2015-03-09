@@ -5,7 +5,7 @@ Colors:
 */
 /*preset parameters*/
 
-*{
+* {
     padding: 0;
     border: 0;
     margin: 0;
@@ -18,11 +18,11 @@ header {
     height: 75px;
     position: fixed;
 }
-header .Logo{
+header .Logo {
     margin: 20px 20px;
     height: 175px;
 }
-header .sub_logo{
+header .sub_logo {
     position: relative;
     margin: 20px -75px;
     height: 80px;
@@ -106,6 +106,7 @@ header a {
 .main_form_container2 .form_advanced {
     bottom: 0;
     left: 0;
+    font-weight: bolder;
     height: 40px;
     position: absolute;
     display: inline-block;
@@ -115,33 +116,99 @@ header a {
     border-bottom-left-radius: 5px;
 }
 .main_form_container2 .form_advanced:hover {
-    position: absolute;
-    display: inline-block;
     box-shadow: inset 0 0 10px #000000;
 }
 .main_form_container2 .form_advanced:active {
+    background-color: #B50909;
+    box-shadow: inset 0 0 20px #000000;
+}
+.main_form_container2 .form_submit {
+    bottom: 0;
+    right: 0;
+    font-weight: bolder;
+    height: 40px;
     position: absolute;
     display: inline-block;
+    width: 50%;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
+    border-bottom-right-radius: 5px;
+}
+.main_form_container2 .form_submit:hover {
+    box-shadow: inset 0 0 10px #000000;
+}
+.main_form_container2 .form_submit:active {
+    background-color: #B50909;
     box-shadow: inset 0 0 20px #000000;
 }
 
-.main_form_container2 .form_submit {
-    bottom: 0;
-    position: absolute;
-    border-left: 1px solid black;
-    border-top: 1px solid black;
-    height: 40px;
+.about_main_container {
+    width: 100%;
+    text-align: center;
+    margin-top: 200px;
     display: inline-block;
-    width: 50%;
-    right: 0;
-    -webkit-border-top-right-radius: 4px;
-    -webkit-border-bottom-right-radius: 5px;
-    -moz-border-radius-topright: 4px;
-    -moz-border-radius-bottomright: 5px;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 5px;
+}
+.about_main_container ul li{
+    list-style-type: none;
 }
 
+.about_sub_container {
+    margin-top: 50px;
+}
+
+footer {
+    width: 100%;
+    height: 0;
+    position: fixed;
+    padding-top: 20px;
+    bottom: 0;
+    text-align: center;
+    transition: all 0.5s ease-out;
+    background-color: #8D8D8D;
+    border-top: groove #B50909;
+}
+footer:hover{
+    height: 150px;
+    transition: all 0.5s ease-out;
+    background-color: #B50909;
+}
+footer ul li{
+    display: inline;
+    font-size: 30px;
+    list-style-type: none;
+    padding-right: 20px;
+    color: #000000;
+    font-family: fantasy;
+    font-weight: bold;
+    transition: all 0.3s ease-out;
+    cursor: default;
+}
+footer ul li:hover{
+    display: inline;
+    list-style-type: none;
+    font-size: 27px;
+    padding-right: 20px;
+    color: #FFFFFF;
+    font-family: fantasy;
+    font-weight: bold;
+    cursor: default;
+    text-shadow: 2px 2px 4px #000000;
+    transition: all 0.3s ease-in;
+}
+footer p{
+    font-size: 18px;
+    font-family: fantasy;
+    text-shadow: 2px 2px 8px #000000;
+    height: 50px;
+    width: 280px;
+    padding-top: 20px;
+    margin-top: 10px;
+    background-color: #FFFFFF;
+    color: #000000;
+    border-radius: 5px;
+    left: 40%;
+    position: absolute;
+}
 .main_results_container {
     position: absolute;
     display: inline-block;
@@ -163,79 +230,4 @@ header a {
     margin-left: 10px;
     display: inline-block;
     box-shadow: 0 0 6px #000000;
-}
-
-.about_main_container {
-    width: 100%;
-    text-align: center;
-    margin-top: 200px;
-    display: inline-block;
-}
-.about_main_container ul li{
-    list-style-type: none;
-}
-
-
-.about_sub_container {
-    margin-top: 50px;
-}
-
-footer {
-    color: #FFFFFF;
-    width: 100%;
-    height: 0;
-    position: fixed;
-    padding-top: 20px;
-    bottom: 0;
-    text-align: center;
-    transition: all 0.5s ease-out;
-    background-color: #8D8D8D;
-    border-top: groove #000000;
-}
-footer:hover{
-    width: 100%;
-    height: 150px;
-    position: fixed;
-    bottom: 0;
-    text-align: center;
-    transition: all 0.5s ease-out;
-    background-color: #B50909;
-}
-footer ul li{
-    display: inline;
-    font-size: 25px;
-    list-style-type: none;
-    padding-right: 20px;
-    color: #000000;
-    font-family: fantasy;
-    font-weight: bold;
-    transition: all 0.3s ease-out;
-    cursor: default;
-}
-footer ul li:hover{
-    display: inline;
-    list-style-type: none;
-    font-size: 27px;
-    padding-right: 20px;
-    color: #FFFFFF;
-    font-family: fantasy;
-    font-weight: bold;
-    cursor: default;
-    text-shadow: 2px 2px 4px #000000;
-    transition: all 0.3s ease-in;
-}
-
-footer p{
-    font-size: 18px;
-    font-family: fantasy;
-    text-shadow: 2px 2px 8px #000000;
-    height: 50px;
-    width: 280px;
-    padding-top: 20px;
-    margin-top: 10px;
-    background-color: #FFFFFF;
-    color: #000000;
-    border-radius: 5px;
-    left: 40%;
-    position: absolute;
 }
