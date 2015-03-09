@@ -1,9 +1,0 @@
-<footer>
-    <ul>
-        <li>Sean</li>
-        <li>Charlie</li>
-        <li>Laurynas</li>
-        <li>Valentinas</li>
-        <li>Dale</li>
-    </ul>
-</footer>

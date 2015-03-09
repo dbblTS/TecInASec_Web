@@ -22,94 +22,67 @@ body {
     top: 0;
     left: 0;
 }
-
-
 header {
     width: 100%;
     height: 75px;
     position: fixed;
+    background: #8D8D8D;
 }
 header .Logo{
-    height: 75px;
+    margin: 5px 20px;
+    height: 175px;
 }
-/*in here I might add some code so that it is in focus!*/
+header a {
+    position: relative;
+    display: inline;
+    float: right;
+    font-size: 25px;
+    font-family: fantasy;
+    font-weight: bold;
+    margin-right: 20px;
+    text-decoration: none;
+    color: #000000;
+}
 .main_form_container {
-    width: 600px;
+    width: 500px;
     height: 300px;
-    border: 1px solid #353535;
-    background-color: #FFFFFF;
+    border: groove #000000;
+    background-color: #7A7A7A;
     position:fixed;
     top: 50%;
+    border-radius: 9px;
     left: 50%;
     margin-top: -150px;
-    margin-left: -300px;
-    transition: all 0.3s ease-out;
+    margin-left: -250px;
+    box-shadow: 0 0 40px #000000;
+    transition: all 0.7s ease-out;
 }
 .main_form_container:hover {
-
-    width: 600px;
+    width: 500px;
     height: 300px;
-    border: 1px solid #353535;
-    background-color: #FFFFFF;
-    position:fixed;
-    top: 50%;
-    left: 50%;
-    margin-top: -150px;
-    margin-left: -300px;
-    transition: all 0.3s ease-out;
-}
-.main_form_container h3{
-    color: #FFFFFF;
-    font-size: 50px;
-    cursor: default;
-    margin-top: -30px;
-    text-shadow: 0 2px 5px #000000;
-    position: absolute;
-    bottom: 0;
-    margin-left: 50%;
-}
-.main_form_container h3:hover{
-    color: #FFFFFF;
-    font-size: 50px;
-    cursor: default;
-    margin-top: -30px;
-    text-shadow: 0 2px 5px #000000;
-    position: absolute;
-    bottom: 0;
-    margin-left: 50%;
-}
-
-.main_form_container2 {
-    width: 600px;
-    height: 300px;
-    border: 1px solid #353535;
-    background-color: #535353;
-    position:fixed;
-    padding-top: 20px;
-    top: 50%;
-    left: 50%;
-    margin-top: -150px;
-    margin-left: -300px;
-    border-radius: 5px;
-    box-shadow: 0 0 5px #000000;
-    transition: background-color 0.2s ease-out;
-}
-
-.main_form_container2:hover {
+    border: groove #000000;
     background-color: #B50909;
-    transition: background-color 0.2s ease-in;
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -250px;
+    transition: all 0.7s ease-out;
 }
-
 .main_form_container2 .form_search {
     text-align: center;
     width: 300px;
     height: 30px;
-    margin-left: 20px;
-    border-radius: 5px;
     position: absolute;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
     float: left;
+    font-weight: bold;
+    font-family: monospace;
     box-shadow: 2px 2px 4px #060606;
 }
+
 
 .main_form_container2 .form_minprice {
     text-align: center;
@@ -193,40 +166,59 @@ header .Logo{
 footer {
     color: #FFFFFF;
     width: 100%;
-    height: 20px;
+    height: 0;
     position: fixed;
+    padding-top: 20px;
     bottom: 0;
     text-align: center;
-    transition: all 0.7s ease-out;
-    background-color: #B50909;
+    transition: all 0.5s ease-out;
+    background-color: #8D8D8D;
+    border-top: groove #000000;
 }
 footer:hover{
     width: 100%;
-    height: 75px;
+    height: 150px;
     position: fixed;
     bottom: 0;
     text-align: center;
-    margin-top: 0;
-    transition: all 0.7s ease-out;
+    transition: all 0.5s ease-out;
+    background-color: #B50909;
 }
 footer ul li{
     display: inline;
     font-size: 25px;
     list-style-type: none;
     padding-right: 20px;
-    color: #4D4D4D;
+    color: #000000;
     font-family: fantasy;
     font-weight: bold;
     transition: all 0.3s ease-out;
+    cursor: default;
 }
 footer ul li:hover{
     display: inline;
     list-style-type: none;
+    font-size: 27px;
     padding-right: 20px;
-    color: #B50909;
+    color: #FFFFFF;
     font-family: fantasy;
     font-weight: bold;
     cursor: default;
+    text-shadow: 2px 2px 4px #000000;
     transition: all 0.3s ease-in;
-    text-shadow: 0 0 5px #999999;
+}
+
+footer p{
+    font-size: 18px;
+    font-family: fantasy;
+    text-shadow: 2px 2px 8px #000000;
+    height: 50px;
+    width: 280px;
+    padding-top: 20px;
+    margin-top: 10px;
+    background-color: #FFFFFF;
+    color: #000000;
+    border-radius: 5px;
+    left: 40%;
+    position: absolute;
 }

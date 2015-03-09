@@ -12,23 +12,68 @@
             <a href="help.html">Help</a>
         </header>
         <div class="main_form_container">
-            <form action="search.php">
-                <input type="text" name="searchString" class="form_search">
-                <label>Search</label>
-                <input type="text" pattern="[0-9]*" name="minPrice" class="form_price">
-                <input type="text" pattern="[0-9]*" name="maxPrice" class="form_price">
-                <label>Price</label>
-                <button type="submit" class="form_submit">></button>
-            </form>
+            <div class="main_form_container2">
+                <form action="search.php">
+                    <input type="text" name="searchString" class="form_search" placeholder="Search">
+                    <input type="text" pattern="[0-9]*" name="minPrice" class="form_minprice" placeholder="min_price">
+                    <input type="text" pattern="[0-9]*" name="maxPrice" class="form_maxprice" placeholder="max_price">
+                    <button type="button" onclick="showAdvanced()" class="form_advanced">A</button>
+                    <button type="submit" class="form_submit">></button>
+                </form>
+            </div>
         </div>
         <footer>
                 <ul>
-                    <li>Sean</li>
-                    <li>Charlie</li>
-                    <li>Laurynas</li>
-                    <li>Valentinas</li>
-                    <li>Dale</li>
+                    <li onmouseover="showDesc('s')" onmouseout="hideDesc('s')">Sean</li>
+                    <li onmouseover="showDesc('c')" onmouseout="hideDesc('c')">Charlie</li>
+                    <li onmouseover="showDesc('l')" onmouseout="hideDesc('l')">Laurynas</li>
+                    <li onmouseover="showDesc('v')" onmouseout="hideDesc('v')">Valentinas</li>
+                    <li onmouseover="showDesc('d')" onmouseout="hideDesc('d')">Dale</li>
+
+                    <p id="sean" style="visibility: hidden;">Sean Traynor: Team Leader</p>
+                    <p id="charlie" style="visibility: hidden;">Charlie Hammond: Design Specialist</p>
+                    <p id="laurynas" style="visibility: hidden;">Laurynas Pupsta: Code Specialist</p>
+                    <p id="valentinas" style="visibility: hidden;">Valentinas Vaiceliunas: Business Specialist</p>
+                    <p id="dale" style="visibility: hidden;">Dale Carr: Project Manager</p>
                 </ul>
         </footer>
+
+        <script type="text/javascript">
+        function showDesc(name){
+            if (name == "s") {
+                document.getElementById('sean').style.visibility = "visible";
+            };
+            if (name == "c") {
+                document.getElementById('charlie').style.visibility = "visible";
+            };
+            if (name == "l") {
+                document.getElementById('laurynas').style.visibility = "visible";
+            };
+            if (name == "v") {
+                document.getElementById('valentinas').style.visibility = "visible";
+            };
+            if (name == "d") {
+                document.getElementById('dale').style.visibility = "visible";
+            };
+        }
+        function hideDesc(name){
+            if (name == "s") {
+                document.getElementById('sean').style.visibility = "hidden";
+            };
+            if (name == "c") {
+                document.getElementById('charlie').style.visibility = "hidden";
+            };
+            if (name == "l") {
+                document.getElementById('laurynas').style.visibility = "hidden";
+            };
+            if (name == "v") {
+                document.getElementById('valentinas').style.visibility = "hidden";
+            };
+            if (name == "d") {
+                document.getElementById('dale').style.visibility = "hidden";
+            };
+        }
+        </script>
+
     </body>
 </html>
