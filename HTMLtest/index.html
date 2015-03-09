@@ -8,15 +8,18 @@
     <body>
         <header>
             <img class="Logo" src="T_logo.png">
+            <img class="sub_logo" src="ecinasec.png">
             <a href="about.html">About Us</a>
             <a href="help.html">Help</a>
         </header>
         <div class="main_form_container">
             <div class="main_form_container2">
                 <form action="search.php">
-                    <input type="text" name="searchString" class="form_search" placeholder="Search">
-                    <input type="text" pattern="[0-9]*" name="minPrice" class="form_minprice" placeholder="min_price">
-                    <input type="text" pattern="[0-9]*" name="maxPrice" class="form_maxprice" placeholder="max_price">
+                    <input type="text" name="searchString" class="form_search" placeholder="SEARCH">
+                    <input type="text" pattern="[0-9]*" name="minPrice" class="form_minprice" placeholder="MIN PRICE">
+                    <input type="text" pattern="[0-9]*" name="maxPrice" class="form_maxprice" placeholder="MAX PRICE">
+                    <input type="text" name="brandString" class="brind_search" placeholder="BRAND">
+
                     <button type="button" onclick="showAdvanced()" class="form_advanced">A</button>
                     <button type="submit" class="form_submit">></button>
                 </form>
