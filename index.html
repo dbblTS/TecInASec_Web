@@ -14,14 +14,13 @@
         </header>
         <div class="main_form_container">
             <div class="main_form_container2">
-                <form action="search.php">
+                <form action="testout" method="POST">
                     <input type="text" name="searchString" class="form_search" placeholder="SEARCH">
                     <input type="text" pattern="[0-9]*" name="minPrice" class="form_minprice" placeholder="MIN PRICE">
                     <input type="text" pattern="[0-9]*" name="maxPrice" class="form_maxprice" placeholder="MAX PRICE">
-                    <input type="text" class="brand_search" placeholder="BRAND" id="advanced" style="visibility: hidden;">
+                    <input type="text" class="brand_search" placeholder="BRAND" id="advanced" style="visibility: visible;">
 
-                    <button type="button" id="a1" onclick="visibilityFunction('aShow')" class="form_advanced" style="visibility: visible;">A</button>
-                    <button type="button" id="a2" onclick="visibilityFunction('aShow')" class="form_advanced" style="visibility: hidden;">A</button>
+                    <button type="button" onclick="visibilityFunction('aToggle')" class="form_advanced">A</button>
                     <button type="submit" class="form_submit">></button>
                 </form>
             </div>
@@ -46,18 +45,11 @@
         function visibilityFunction(name){
 
             //Show/Hide Advanced
-            var c = 1;
-            if (name == "aShow" && c == 1) {
-                document.getElementById('advanced').style.visibility = "visible";
-                document.getElementById('a1').style.visibility = "hidden";
-                document.getElementById('a2').style.visibility = "visible";
-                c = 2;
-            };
-            if (name == "aShow" && c == 2) {
-                document.getElementById('advanced').style.visibility = "hidden";
-                document.getElementById('a1').style.visibility = "visible";
-                document.getElementById('a2').style.visibility = "hidden";
-                c = 1;
+            if (name == "aToggle") {
+                if (document.getElementById('advanced').style.visibility == "hidden") {
+                    alert("Off bro!");
+                    document.getElementById('advanced').style.visibility = "visible";
+                };
             };
 
 
