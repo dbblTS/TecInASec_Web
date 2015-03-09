@@ -45,14 +45,14 @@
 
             //Show/Hide Advanced
             if (name == "aToggle") {
-                if (document.getElementById('advanced').style.visibility == "hidden") {
-                    alert("Off bro!");
-                    document.getElementById('advanced').style.visibility = "visible";
-                };
-                if (document.getElementById('advanced').style.visibility == "visible") {
-                    alert("Off bro!");
-                    document.getElementById('advanced').style.visibility = "hidden";
-                };
+                switch(document.getElementById('advanced').style.visibility){
+                    case "visible":
+                        document.getElementById('advanced').style.visibility = "hidden";
+                        break;
+                    case "hidden":
+                        document.getElementById('advanced').style.visibility = "visible";
+                        break;
+                }
             };
 
 
