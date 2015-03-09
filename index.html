@@ -8,15 +8,18 @@
     <body>
         <header>
             <img class="Logo" src="T_logo.png">
+            <img class="sub_logo" src="ecinasec.png">
             <a href="about.html">About Us</a>
             <a href="help.html">Help</a>
         </header>
         <div class="main_form_container">
             <div class="main_form_container2">
                 <form action="search.php">
-                    <input type="text" name="searchString" class="form_search" placeholder="Search">
-                    <input type="text" pattern="[0-9]*" name="minPrice" class="form_minprice" placeholder="min_price">
-                    <input type="text" pattern="[0-9]*" name="maxPrice" class="form_maxprice" placeholder="max_price">
+                    <input type="text" name="searchString" class="form_search" placeholder="SEARCH">
+                    <input type="text" pattern="[0-9]*" name="minPrice" class="form_minprice" placeholder="MIN PRICE">
+                    <input type="text" pattern="[0-9]*" name="maxPrice" class="form_maxprice" placeholder="MAX PRICE">
+                    <input type="text" name="brandString" class="brind_search" placeholder="BRAND">
+
                     <button type="button" onclick="showAdvanced()" class="form_advanced">A</button>
                     <button type="submit" class="form_submit">></button>
                 </form>
@@ -24,11 +27,11 @@
         </div>
         <footer>
                 <ul>
-                    <li onmouseover="showDesc('s')" onmouseout="hideDesc('s')">Sean</li>
-                    <li onmouseover="showDesc('c')" onmouseout="hideDesc('c')">Charlie</li>
-                    <li onmouseover="showDesc('l')" onmouseout="hideDesc('l')">Laurynas</li>
-                    <li onmouseover="showDesc('v')" onmouseout="hideDesc('v')">Valentinas</li>
-                    <li onmouseover="showDesc('d')" onmouseout="hideDesc('d')">Dale</li>
+                    <li onmouseover="description('sShow')" onmouseout="description('sHide')">Sean</li>
+                    <li onmouseover="description('cShow')" onmouseout="description('cHide')">Charlie</li>
+                    <li onmouseover="description('lShow')" onmouseout="description('lHide')">Laurynas</li>
+                    <li onmouseover="description('vShow')" onmouseout="description('vHide')">Valentinas</li>
+                    <li onmouseover="description('dShow')" onmouseout="description('dHide')">Dale</li>
 
                     <p id="sean" style="visibility: hidden;">Sean Traynor: Team Leader</p>
                     <p id="charlie" style="visibility: hidden;">Charlie Hammond: Design Specialist</p>
@@ -39,39 +42,59 @@
         </footer>
 
         <script type="text/javascript">
-        function showDesc(name){
-            if (name == "s") {
+        function description(name){
+
+            //Show/Hide Advanced
+            if (name == "aShow") {
+                document.getElementById('tooltip').style.visibility = "visible";
+            };
+            if (name == "aHide") {
+                document.getElementById('tooltip').style.visibility = "hidden";
+            };
+
+
+            //Show/Hide tooltips
+            if (name == "tShow") {
+                document.getElementById('tooltip').style.visibility = "visible";
+            };
+            if (name == "tHide") {
+                document.getElementById('tooltip').style.visibility = "hidden";
+            };
+
+            //Show Name Description
+            if (name == "sShow") {
                 document.getElementById('sean').style.visibility = "visible";
             };
-            if (name == "c") {
+            if (name == "cShow") {
                 document.getElementById('charlie').style.visibility = "visible";
             };
-            if (name == "l") {
+            if (name == "lShow") {
                 document.getElementById('laurynas').style.visibility = "visible";
             };
-            if (name == "v") {
+            if (name == "vShow") {
                 document.getElementById('valentinas').style.visibility = "visible";
             };
-            if (name == "d") {
+            if (name == "dShow") {
                 document.getElementById('dale').style.visibility = "visible";
             };
-        }
-        function hideDesc(name){
-            if (name == "s") {
+
+            //Hide Name Description
+            if (name == "sHide") {
                 document.getElementById('sean').style.visibility = "hidden";
             };
-            if (name == "c") {
+            if (name == "cHide") {
                 document.getElementById('charlie').style.visibility = "hidden";
             };
-            if (name == "l") {
+            if (name == "lHide") {
                 document.getElementById('laurynas').style.visibility = "hidden";
             };
-            if (name == "v") {
+            if (name == "vHide") {
                 document.getElementById('valentinas').style.visibility = "hidden";
             };
-            if (name == "d") {
+            if (name == "dHide") {
                 document.getElementById('dale').style.visibility = "hidden";
             };
+
         }
         </script>
 
