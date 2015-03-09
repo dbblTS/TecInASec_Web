@@ -24,14 +24,56 @@
         </div>
         <footer>
                 <ul>
-                    <li>Sean</li>
-                    <li>Charlie</li>
-                    <li>Laurynas</li>
-                    <li>Valentinas</li>
-                    <li>Dale</li>
+                    <li onmouseover="showDesc('s')" onmouseout="hideDesc('s')">Sean</li>
+                    <li onmouseover="showDesc('c')" onmouseout="hideDesc('c')">Charlie</li>
+                    <li onmouseover="showDesc('l')" onmouseout="hideDesc('l')">Laurynas</li>
+                    <li onmouseover="showDesc('v')" onmouseout="hideDesc('v')">Valentinas</li>
+                    <li onmouseover="showDesc('d')" onmouseout="hideDesc('d')">Dale</li>
+
+                    <p id="sean" style="visibility: hidden;">Sean Traynor: Team Leader</p>
+                    <p id="charlie" style="visibility: hidden;">Charlie Hammond: Design Specialist</p>
+                    <p id="laurynas" style="visibility: hidden;">Laurynas Pupsta: Code Specialist</p>
+                    <p id="valentinas" style="visibility: hidden;">Valentinas Vaiceliunas: Business Specialist</p>
+                    <p id="dale" style="visibility: hidden;">Dale Carr: Project Manager</p>
                 </ul>
-            <p>Some information about the team and who they are.
-            <br> maybe points about what they have done.</p>
         </footer>
+
+        <script type="text/javascript">
+        function showDesc(name){
+            if (name == "s") {
+                document.getElementById('sean').style.visibility = "visible";
+            };
+            if (name == "c") {
+                document.getElementById('charlie').style.visibility = "visible";
+            };
+            if (name == "l") {
+                document.getElementById('laurynas').style.visibility = "visible";
+            };
+            if (name == "v") {
+                document.getElementById('valentinas').style.visibility = "visible";
+            };
+            if (name == "d") {
+                document.getElementById('dale').style.visibility = "visible";
+            };
+        }
+        function hideDesc(name){
+            if (name == "s") {
+                document.getElementById('sean').style.visibility = "hidden";
+            };
+            if (name == "c") {
+                document.getElementById('charlie').style.visibility = "hidden";
+            };
+            if (name == "l") {
+                document.getElementById('laurynas').style.visibility = "hidden";
+            };
+            if (name == "v") {
+                document.getElementById('valentinas').style.visibility = "hidden";
+            };
+            if (name == "d") {
+                document.getElementById('dale').style.visibility = "hidden";
+            };
+        }
+        </script>
+
     </body>
 </html>

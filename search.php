@@ -1,9 +1,9 @@
 <?php 
-	define('DB_HOST', getenv('OPENSHIFT_MYSQL_DB_HOST'));
-	define('DB_PORT', getenv('OPENSHIFT_MYSQL_DB_PORT'));
-	define('DB_USER', getenv('OPENSHIFT_MYSQL_DB_USERNAME'));
-	define('DB_PASS', getenv('OPENSHIFT_MYSQL_DB_PASSWORD'));
-	define('DB_NAME', getenv('OPENSHIFT_GEAR_NAME'));
+	define('DB_HOST', getenv('127.8.149.130'));
+	define('DB_PORT', getenv('3306'));
+	define('DB_USER', getenv('adminFY55S2j'));
+	define('DB_PASS', getenv('yTDlCJyDTwWs'));
+	define('DB_NAME', getenv('tecinasectemp'));
 
 	$dbhost = constant("DB_HOST"); // Host name 
 	$dbport = constant("DB_PORT"); // Host port
@@ -13,5 +13,12 @@
 
 	$MySQLConnect = mysqli_connect($dbhost, $dbusername, $dbpassword, "", $dbport) or die("Error: " . mysqli_error($MySQLConnect));
 	mysqli_select_db($MySQLConnect, $db_name) or die("Error: " . mysqli_error($MySQLConnect));
+
+	if ($MySQLConnect == false) {
+		echo "Not connected...";
+	}
+	else {
+		echo "Connected!!";
+	}
 
 ?>
