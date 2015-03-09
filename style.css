@@ -165,6 +165,21 @@ header a {
     box-shadow: 0 0 6px #000000;
 }
 
+.about_main_container {
+    width: 100%;
+    text-align: center;
+    margin-top: 200px;
+    display: inline-block;
+}
+.about_main_container ul li{
+    list-style-type: none;
+}
+
+
+.about_sub_container {
+    margin-top: 50px;
+}
+
 footer {
     color: #FFFFFF;
     width: 100%;
