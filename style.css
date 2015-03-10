@@ -144,6 +144,26 @@ header a {
     background-color: #B50909;
     box-shadow: inset 0 0 20px #000000;
 }
+
+.tooltipSearch {
+    display: inline-block;
+    position: absolute;
+    top: 260px;
+    left: 160px;
+    padding: 5px;
+    background-color: #B50909;
+}
+
+.tooltipPrice {
+    display: inline-block;
+    position: absolute;
+}
+
+.tooltipCheckbox {
+    display: inline-block;
+    position: absolute;
+}
+
 .about_main_container {
     width: 100%;
     text-align: center;
