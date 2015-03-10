@@ -9,7 +9,7 @@
         <header>
             <img class="Logo" src="T_logo.png">
             <img class="sub_logo" src="ecinasec.png">
-            <a href="help.html">Help</a>
+            <a href="#"onclick="visibilityFunction('tToggle')">Help</a>
         </header>
         <div class="main_form_container">
             <div class="main_form_container2">
@@ -33,6 +33,18 @@
                     <button type="submit" class="form_submit">SEARCH</button>
                 </form>
             </div>
+        </div>
+        <div class="tooltipSearch" id="tooltip1" style="visibility: hidden;">
+            <h3>Search:</h3>
+            <p>Enter any search word(s) that you want to search for.</p>
+        </div>
+        <div class="tooltipPrice" id="tooltip2" style="visibility: hidden;">
+            <h3>Price:</h3>
+            <p>Enter any price range.<br />Minimum and maximum value is automatically set to default values (0 and max) if not entered.</p>
+        </div>
+        <div class="tooltipCheckbox" id="tooltip3" style="visibility: hidden;">
+            <h3>Brands:</h3>
+            <p>Select specific brands you want to show.<br />You can select multiple brands.</p>
         </div>
         <footer>
                 <ul>
@@ -67,11 +79,19 @@
 
 
             //Show/Hide tooltips
-            if (name == "tShow") {
-                document.getElementById('tooltip').style.visibility = "visible";
-            };
-            if (name == "tHide") {
-                document.getElementById('tooltip').style.visibility = "hidden";
+            if (name == "tToggle") {
+                switch(document.getElementById('tooltip1').style.visibility){
+                    case "visible":
+                        document.getElementById('tooltip1').style.visibility = "hidden";
+                        document.getElementById('tooltip2').style.visibility = "hidden";
+                        document.getElementById('tooltip3').style.visibility = "hidden";
+                        break;
+                    case "hidden":
+                        document.getElementById('tooltip1').style.visibility = "visible";
+                        document.getElementById('tooltip2').style.visibility = "visible";
+                        document.getElementById('tooltip3').style.visibility = "visible";
+                        break;
+                }
             };
 
             //Show Name Description
