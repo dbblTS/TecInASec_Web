@@ -91,17 +91,19 @@ header a {
     font-family: monospace;
     box-shadow: inset 0 0 5px #000000;
 }
-.main_form_container2 .brand_search {
+.main_form_container2 .brand {
     text-align: center;
     width: 50%;
-    height: 30px;
-    position: absolute;
+    height: 100px;
+    position: relative;
     margin-left: 25%;
     margin-top: 140px;
     float: left;
     font-weight: bold;
     font-family: monospace;
     box-shadow: inset 0 0 5px #000000;
+    overflow-y: scroll;
+    background-color: #FFFFFF;
 }
 .main_form_container2 .form_advanced {
     bottom: 0;
