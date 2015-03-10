@@ -38,6 +38,7 @@ header a {
     margin-top: 15px;
     text-decoration: none;
     color: #000000;
+    cursor: pointer;
 }
 .main_form_container {
     width: 500px;
@@ -117,6 +118,7 @@ header a {
     -webkit-border-bottom-left-radius: 5px;
     -moz-border-radius-bottomleft: 5px;
     border-bottom-left-radius: 5px;
+    cursor: pointer;
 }
 .main_form_container2 .form_advanced:hover {
     box-shadow: inset 0 0 10px #000000;
@@ -136,6 +138,7 @@ header a {
     -webkit-border-bottom-right-radius: 5px;
     -moz-border-radius-bottomright: 5px;
     border-bottom-right-radius: 5px;
+    cursor: pointer;
 }
 .main_form_container2 .form_submit:hover {
     box-shadow: inset 0 0 10px #000000;
@@ -234,7 +237,6 @@ header a {
     border: 1px solid #B50909;
     box-shadow: 2px 2px 4px #000000;
 }
-
 .about_sub_container {
     margin-top: 50px;
     width: 60%;
@@ -286,12 +288,10 @@ footer a{
     font-family: fantasy;
     font-weight: bolder;
     transition: color 0.3s ease-in;
-
 }
 footer a:hover{
     color: #FFFFFF;
     transition: color 0.3s ease-in;
-
 }
 
 footer p{
