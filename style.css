@@ -239,6 +239,16 @@ footer ul li:hover{
     cursor: default;
     transition: color 0.3s ease-in;
 }
+
+footer a{
+    float: right;
+    color: #000000;
+    text-decoration: none;
+    font-size: 24px;
+    margin-right: 5px;
+    z-index: 1;
+}
+
 footer p{
     font-size: 20px;
     font-family: sans-serif;
