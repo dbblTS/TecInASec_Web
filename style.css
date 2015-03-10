@@ -228,10 +228,18 @@ header a {
 }
 
 .about_main_container {
-    width: 100%;
     text-align: center;
-    margin-top: 40px;
     display: inline-block;
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    border-radius: 9px;
+    left: 50%;
+    margin-left: -250px;
+    font-family: fantasy;
+    font-weight: bold;
+    font-size: 20px;
+
 }
 .about_main_container ul li{
     list-style-type: none;
