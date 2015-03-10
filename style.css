@@ -239,8 +239,7 @@ footer p{
     height: 125px;
     width: 125px;
     float: left;
-    margin-left: 10px;
-    margin-top: 10px;
+    margin: 10px 10px;
     display: inline-block;
     box-shadow: 0 0 6px #000000;
     -webkit-border-top-left-radius: 5px;
@@ -248,13 +247,15 @@ footer p{
     border-top-left-radius: 5px;
 }
 .main_results_container h3 {
-    margin: 20px 10px;
+    margin: 7px 140px;
     display: inline-block;
     position: absolute;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 20px;
 }
-
-.main_results_container p .desc {
-    margin-top: 60px;
+.main_results_container .desc {
+    margin: 150px -135px;
     display: inline-block;
     position: absolute;
 }
