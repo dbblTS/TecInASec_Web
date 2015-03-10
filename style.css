@@ -324,6 +324,9 @@ footer p{
     opacity: 0.9;
     background-color: #7A7A7A;
 }
+.main_results_container .item h3{
+    width: 250px;
+}
 .main_results_container .item ul {
     position: relative;
     margin-top: 150px;
