@@ -22,6 +22,9 @@ header .Logo {
     margin: 20px 20px;
     height: 175px;
 }
+header .Logo:hover {
+    cursor: pointer;
+}
 header .sub_logo {
     position: relative;
     margin: 20px -75px;
