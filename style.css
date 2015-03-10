@@ -237,7 +237,6 @@ header a {
     left: 50%;
     margin-left: -250px;
     font-family: fantasy;
-    font-weight: bold;
     font-size: 20px;
 
 }
@@ -253,6 +252,9 @@ header a {
     width: 60%;
     display: inline-block;
     text-align: center;
+}
+.about_main_container h1, .about_main_container h2 {
+    font-weight: bold;
 }
 footer {
     width: 100%;
@@ -299,7 +301,7 @@ footer a{
     font-family: fantasy;
     font-weight: bolder;
     transition: color 0.3s ease-in;
-    
+
 }
 footer a:hover{
     color: #FFFFFF;
