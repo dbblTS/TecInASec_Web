@@ -314,7 +314,7 @@ footer p{
     height: 50px;
     width: 100%;
     padding-top: 20px;
-    margin-top: -20px;
+    margin-top: 20px;
     box-shadow: inset 0 0 10px #000000;
     background-color: #B50909;
     color: #000000;
