@@ -153,7 +153,7 @@ header a {
 
 .tooltipSearch {
     width: 300px;
-    height: 60px;
+    height: 150px;
     padding: 5px;
     border: groove #000000;
     background-color: #B50909;
@@ -171,6 +171,11 @@ header a {
     font-family: sans-serif;
     font-weight: bold;
     color: #000000;
+}
+.tooltipSearch h4{
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #FFFF00;
 }
 .tooltipSearch p{
     font-family: sans-serif;
