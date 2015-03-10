@@ -223,14 +223,27 @@ footer p{
 .main_results_container .item{
     border: 1px solid #353535;
     display: inline-block;
-    width: 250px;
-    height: 250px;
+    width: 350px;
+    height: 350px;
 }
 .main_results_container img {
-    height: 150px;
-    width: 150px;
+    height: 125px;
+    width: 125px;
     float: left;
     margin-left: 10px;
+    margin-top: 10px;
     display: inline-block;
     box-shadow: 0 0 6px #000000;
 }
+.main_results_container h3 {
+    margin-top: 20px;
+    display: inline-block;
+    position: absolute;
+}
+
+.main_results_container p .desc {
+    margin-top: 60px;
+    display: inline-block;
+    position: absolute;
+}
+
