@@ -16,7 +16,7 @@ body {
 header {
     width: 100%;
     height: 75px;
-    position: fixed;
+    position: absolute;
 }
 header .Logo {
     margin: 20px 20px;
@@ -215,17 +215,25 @@ footer p{
 }
 .main_results_container {
     position: absolute;
-    display: inline-block;
-    margin: 100px 0 auto auto;
-    text-align: center;
-    left: 30%;
+    display: inline-table;
+    margin: 70px 135px;
+    width: 85%;
 }
-
 .main_results_container .item{
-    border: 1px solid #353535;
+    border: groove #B50909;
     display: inline-block;
     width: 350px;
     height: 350px;
+    margin: 10px 10px;
+    border-radius: 9px;
+    box-shadow: 0 0 40px #000000;
+    transition: background-color 0.7s ease-out;
+    opacity: 0.9;
+    background-color: #7A7A7A;
+}
+.main_results_container .item:hover {
+    background-color: #B50909;
+    transition: background-color 0.7s ease-out;
 }
 .main_results_container img {
     height: 125px;
@@ -235,9 +243,12 @@ footer p{
     margin-top: 10px;
     display: inline-block;
     box-shadow: 0 0 6px #000000;
+    -webkit-border-top-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    border-top-left-radius: 5px;
 }
 .main_results_container h3 {
-    margin-top: 20px;
+    margin: 20px 10px;
     display: inline-block;
     position: absolute;
 }
