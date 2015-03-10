@@ -306,6 +306,11 @@ footer p{
     color: #000000;
     position: absolute;
 }
+.top_info {
+    margin-left: 10px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
 .main_results_container {
     position: absolute;
     display: inline-table;
