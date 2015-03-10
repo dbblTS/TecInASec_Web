@@ -265,6 +265,18 @@ footer p{
     -webkit-border-top-left-radius: 5px;
     -moz-border-radius-topleft: 5px;
     border-top-left-radius: 5px;
+    position: absolute;
+    transition: all 0.3s ease-out;
+    z-index: 1;
+}
+.main_results_container img:active {
+    height: 325px;
+    width: 325px;
+    box-shadow: 0 0 6px #000000;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    transition: all 0.3s ease-out;
 }
 .main_results_container h3 {
     margin: 7px 140px;
@@ -275,7 +287,7 @@ footer p{
     font-size: 20px;
 }
 .main_results_container .desc {
-    margin: 150px -135px;
+    margin: 145px 10px;
     display: inline-block;
     position: absolute;
 }
