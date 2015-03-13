@@ -430,3 +430,7 @@ footer p{
     display: inline-block;
     position: absolute;
 }
+
+/*@media handheld{
+    width: #Percentage width.#;
+}*/
